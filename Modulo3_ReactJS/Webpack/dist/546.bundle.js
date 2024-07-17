@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack=self.webpackChunkwebpack||[]).push([[546],{546:(e,n,a)=>{a.r(n),a.d(n,{default:()=>t});var l=a(540);const t=function(){return l.createElement("div",null,l.createElement("p",null,"Digital Innovation One"),l.createElement("p",null,"Bem vindo a nossa aula"))}}}]);
