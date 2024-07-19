@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import Counter from './Counter';
 
-function App() {
+const ClassRoom = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+const ClassRoomControls = styled.div`
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0;
+`;
+
+const ClassRoomBoard = styled.div`
+	margin: 12px;
+	display: flex;
+	justify-content: center;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ClassRoom>
+      <ClassRoomControls>
+        Tópico único ;)
+      </ClassRoomControls>
+      <ClassRoomBoard>
+        <Counter />
+      </ClassRoomBoard>
+    </ClassRoom>
   );
 }
 
