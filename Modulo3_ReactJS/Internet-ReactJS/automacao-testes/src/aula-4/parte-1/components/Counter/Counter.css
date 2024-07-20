@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center; /* Centraliza horizontalmente os elementos filhos */
+  justify-content: center; /* Centraliza verticalmente os elementos filhos */
+  height: 100vh; /* Ocupa a altura total da viewport */
+  padding: 10px; /* Adiciona um pouco de espaçamento ao redor do contêiner */
+  box-sizing: border-box; /* Inclui padding no cálculo da altura e largura total */
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.countex-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do .countex-wrapper */
+  height: 30px;
+  width: auto; /* Ajuste para se adaptar ao conteúdo */
+  margin-bottom: 10px; /* Espaçamento abaixo do .countex-wrapper */
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid rgb(192, 192, 192);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  height: 30px;
+  width: auto; /* Ajusta o tamanho para o conteúdo */
+  padding: 0 10px; /* Adiciona um pouco de espaçamento interno */
+}
+
+.counter-button-plus-active,
+.counter-button-minus-active,
+.counter-button-minus-desactive {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.counter-button-plus-active,
+.counter-button-minus-active {
+  color: red;
+}
+
+.counter-button-minus-desactive {
+  color: rgb(105, 105, 105);
+}
