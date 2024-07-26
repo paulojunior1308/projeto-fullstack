@@ -4,5 +4,5 @@
 /**
  * 
  */
-module map {
+module duas_notas {
 }
