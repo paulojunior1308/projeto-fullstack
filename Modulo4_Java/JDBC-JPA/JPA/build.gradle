@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // ======= Necessários para a parte 1 do curso. =========
+
+    // Notar que essa API não faz o programa rodar, apenas valida as annotations (pois são só as especificações)
+    // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+    // implementation 'javax.persistence:javax.persistence-api:2.2'
+
+    // Driver JDBC que será utilizado pelos frameworks que implementam o JPA
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.17'
+
+    // === Necessários para a parte 2 do curso. Essas são as implementações do JPA (Hibernate e EclipseLink) e o automatizador de criação de Metamodels ===
+
+    // Implementação Hibernate
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation 'org.hibernate:hibernate-core:5.4.12.Final'
+
+    // Implementação EclipseLink
+    // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
+    // implementation '
+}
