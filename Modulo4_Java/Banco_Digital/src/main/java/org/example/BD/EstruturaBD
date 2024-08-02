@@ -1,0 +1,16 @@
+create database db_banco_digital;
+use db_banco_digital;
+
+create table cliente(
+	id int primary key auto_increment,
+    nome varchar(80) unique not null
+);
+
+create table conta(
+	id int primary key auto_increment,
+    agencia int(4) not null,
+    conta int(4) not null,
+    saldo double not null,
+    cliente_id int,
+    foreign key (cliente_id) references cliente(id)
+);
